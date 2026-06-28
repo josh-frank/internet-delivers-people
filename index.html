@@ -62,11 +62,11 @@
     const paragraphs = [
       "The Internet\nDelivers\nPeople",
       "Josh Frank\n2026",
-      "The Product of the commercial Internet is the Audience.",
+      "The product of the commercial Internet is the audience.",
       "The Internet delivers people to an advertiser.",
       "There is no such thing as mass media in the United States anymore except for the Internet.",
       "Mass media means that a medium can deliver masses of people.",
-      "the Internet delivers 6.5 billion people a minute.",
+      "The Internet delivers 6.5 billion people a minute.",
       "On the Internet the viewer pays for the privilege of having himself sold.",
       "It is the consumer who is consumed.",
       "You are the product of the Internet.",
@@ -99,8 +99,8 @@
       "There is inherent conflict between:",
       "COMMERCE,",
       "INFORMATION,",
-      "ENTERTAINMENT.",
-      "There is a mass media compulsion to reinforce the status quo. To reinforce the distribution of power.",
+      "and ENTERTAINMENT.",
+      "There is a mass media compulsion to reinforce the status quo: to reinforce the distribution of power.",
       "The NEW MEDIA STATE is dependent on the Internet for its existence.",
       "The NEW MEDIA STATE is dependent on propaganda for its existence.",
       "Corporations that own ISPs control them.",
@@ -115,9 +115,7 @@
       "You are consumed.",
       "You are the product of the Internet.",
       "The Internet delivers people.",
-      "\"THE INTERNET\nDELIVERS\nPEOPLE\"",
-      "Josh Frank",
-      "COPYRIGHT 2026",
+      "(Apologies to Serra & Schoolman)",
     ];
 
     // Pixels per second the text scrolls upward.
@@ -164,9 +162,9 @@
         // Transform: move the container upward from its initial top:100vh position
         container.style.transform = `translateY(-${currentY}px)`;
 
-        if (currentY < totalPx) {
+        // if (currentY < totalPx) {    // add back loop to run animation only once
           requestAnimationFrame(step);
-        }
+        // }
       }
 
       requestAnimationFrame(step);
